@@ -1,0 +1,449 @@
+/*修正时间输入框的时间icon位置*/
+.data-icon-correct{
+    .el-input__prefix{
+        left: unset;
+        top:5px;
+    }
+}
+.el-input__suffix{
+    top:0px;
+}
+.custom-suffix{
+    padding-top: 4px;
+    display: inline-block;
+    color:#606266;
+}
+.resume-header{
+    overflow: hidden;
+    width:1201px;
+    margin: 29px auto 20px;
+
+    h1{
+        color: #333;
+        font-size: 18px;
+        display: inline-block;
+    }
+    span{
+        color: #333;
+        float: right;
+        i{
+            font-style: normal;
+            color: #f07026;
+        }
+    }
+}
+.resume-warp{
+    width:1201px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    .mar-bom{
+        margin-bottom: 20px;
+    }
+    .pad0{
+        padding: 0!important;
+    }
+    .title{
+        background-color: #f07026;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        span{
+            font-size: 14px;
+        }
+    }
+    .resume-detail-main{
+        background-color: #fff;
+        overflow: hidden;
+        padding: 28px 40px;
+        & > div{
+            &.resume-col3{
+                margin-left: 75px;
+            }
+        }
+        &.textarea1{
+                .el-textarea{
+                    height: 237px;
+                    textarea{
+                        height:230px ;
+                    }
+                }
+            }
+        &.recommended-reasons{
+            .reasons-input.el-form-item{
+                width: 1120px;
+                height: 237px;
+            }
+            .el-form-item__content{
+                height: auto;                
+                margin-left: 0!important;
+            }
+            .el-textarea{
+                width: 1120px;
+                textarea{
+                    resize:none;
+                    padding: 18px 15px;
+                    // height: 237px;
+                    border: 1px solid #dedede;
+                }
+            }
+            &.major-desc{
+                padding: 0;
+                height: 180px;
+                .el-form-item{
+                    width: 100%;
+                }
+                .el-textarea{
+                    width: 100%;
+                    textarea{
+                        // height: 95px;
+                    }
+                }
+                p{
+                    color: #606266;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .portrait{
+            margin-right: 40px;
+            width: 124px;
+            img{
+                display: block;
+                font-size: 0;
+                background-color: #f07026;
+                border-radius: 100%;
+                border: none;
+                height: 124px;
+                width: 124px;
+            }
+            p{
+                overflow: hidden;
+                margin-top: 10px;
+                span{
+                    float: left;
+                    display: block;
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+        }
+        .input-group{
+            height: 44px;
+            &.single-line{
+                .el-input__inner{
+                    width: 344px;
+                }
+            }
+            .el-form-item:nth-child(2){
+                margin-left: 20px;
+            }
+            .join-job{
+                label{
+                    width: 108px!important;
+                }
+                .el-input__inner{
+                    width: 95px;
+                    padding-left: 2px;
+                }
+                .el-form-item__content{
+                    margin-left: 108px!important;
+                }
+                .el-date-editor.el-input{
+                    width: 95px;
+                }
+            }
+            .current-job{
+                &.el-form-item{
+                    margin-left: 0px;
+                }
+                label.el-form-item__label{
+                    width: 108px!important;
+                }
+                .el-form-item__content{
+                    margin-left: 108px!important;
+                }
+            }
+        }
+        .el-form-item__content,.el-form-item{
+            height: 30px;
+        }
+        .el-input__inner{
+            border-radius: 0px; 
+            border: none;
+            border-bottom: 1px solid #ddd;
+            width: 120px;
+            height: 22px;
+            line-height: 22px;
+        }
+        .el-form-item__error{
+            padding-top: 4px;
+        }
+        .input-group{
+            .el-form-item{
+                display: inline-block;
+            }
+        }
+        .el-form-item__label{
+            padding-right: 0;
+            width: 90px;
+        }
+        .el-input--prefix .el-input__inner,.el-input--suffix .el-input__inner{
+            padding: 0 15px;
+        }
+        .el-date-editor.el-input{
+            width: 120px;
+        }
+        //重置日期icon的位置
+        .el-input__prefix{
+            top: 0px;
+            text-align: right;
+            right: 0;
+        }
+        .el-input__icon{
+            cursor: pointer;
+            line-height: 14px;
+        }
+        .birthday-form-item .el-input__prefix{
+            left:unset;
+        }
+        .el-radio+.el-radio{
+            margin-left: 10px;
+        }
+        .el-radio__label{
+            padding-left: 5px;
+        }
+    }
+
+    .job-detail{
+        .resume-detail-main.recommended-reasons.major-desc{
+            height: 114px;
+        }
+        .el-form-item__content{
+
+        }
+        .add-project-warp{
+            height: auto;
+        }
+        .form-footer{
+            margin-top: 30px;
+        }
+        .project-add{
+            padding: 0;
+            p{
+                display: inline-block;
+                width: 229px;
+                height: 43px;
+                line-height: 43px;
+                border: 1px solid #f07026;
+
+            }
+        }
+        .project-detail{
+            .project-title{
+                font-size: 14px;
+                color: #333;
+                margin-top: 20px;
+            }
+        }
+    }
+    /*添加教育经历/工作经历*/
+    .add-project-warp{
+        border: 1px solid #dedede;
+        border-top: 3px solid #f07026;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 30px 50px;        
+        .input-group-warp{
+            width: 100%;            
+            .input-group-add{
+                width: 40%;
+                display: inline-block;
+                box-sizing: border-box;
+                margin-right: 15px;
+                .el-form-item{
+                    float: left;
+                    box-sizing: border-box;
+                    display: block;
+                    width: 50%;
+                    margin-right: 0;
+                    padding-left: 10px;
+                }
+                & .el-form-item:first-child{
+                    padding-left: 0px;
+                }
+            }
+        }
+        .input-group-add{
+            width: 100%;
+            .el-form-item{
+                display: inline-block;
+                width: 40%;
+                margin-right: 15px;
+                .el-input__inner{
+                    width: 100%;
+                    height: 22px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    /*添加教育经历/工作经历 按钮*/
+    &.add-project-btn{
+        cursor: pointer;
+        margin-top: -10px;
+        text-align: center;
+    }
+    /*教育经历列表*/
+
+    .education-list{
+        // padding: 0 40px;
+        background-color: #fff;
+    }
+    .education-item{
+        overflow: hidden;
+        padding: 23px 0px 17px;
+        border-bottom: 1px solid #DDDDDD;
+        &:nth-last-of-type(1){
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+        p.edu-column{
+            float: left;
+            font-size: 14px;
+            color: #333;
+            &.fr{
+                cursor: pointer;
+                float: right;
+                margin-right: 0;
+                color: #F8B693;
+                font-size: 20px;
+                i{
+                    margin-left: 5px;
+                }
+            }
+            &.school-name{
+                font-weight: 600;
+                font-size: 16px;
+                color: #323232;
+                span{
+                    color: #B0B0B0;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+            &.column1{
+                width: 32%;
+                height: 18px;
+                line-height: 18px;
+            }
+            &.column2{
+                width: 20%;
+            }
+            &.column3{
+                width: 20%;
+            }
+            &.major-desc{
+                display: block;
+                width: 100%;
+                margin-top: 8px;
+                overflow: hidden;
+                span{
+                    float: left;
+                    display: block;
+                    line-height: 21px;
+                    font-size: 12px;
+                    color: #333;
+                    &.major-desc-content{
+                        width: 94%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-footer{
+    text-align: center;
+    button{
+        font-size: 16px;
+        // &.is-plain{
+        //     background-color: #bbb;
+        //     color: #fff;
+        // }
+    }
+}
+
+.projectlist-warp{
+    .projectlist-title{
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    .project-title{
+        font-size: 14px;
+        color: #333;
+        padding-left: 8px;
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #f07026;
+            content: '';
+            display: block;
+        }
+        span{
+            color: #999;
+        }
+        .editbtn{
+            float: right;
+            color: #F8B693;
+            font-size: 20px;
+        }
+    }
+}
+
+.rome-line{
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+    .lint-title{
+        float: left;
+        display:block;
+        width: 95px;
+        text-align: left;
+        padding-left: 8px;
+        line-height: 1.6;
+    }
+    .lint-content{
+        display: block; 
+        margin-left: 95px;
+        line-height: 1.6;
+    }
+}
+
+.resume-add-icon{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url('../../assets/user/add.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.region-icon{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url('../../assets/user/region.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}

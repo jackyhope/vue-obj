@@ -1,0 +1,701 @@
+$maincolor:#f07026;
+.blpl {
+  border-left: 3px solid $maincolor;
+  padding-left: 8px;
+}
+
+.theme-color {
+  color: $maincolor;
+}
+
+.fs12c9 {
+  font-size: 12px;
+  color: #999;
+}
+
+.ml0 {
+  margin-left: 0px !important;
+}
+
+.share-total {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 18px;
+  span {
+    color: #f07026;
+  }
+}
+
+.icon-alipay {
+  display: inline-block;
+  width: 118px;
+  height: 50px;
+  background-image: url('../../assets/user/alipay.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-wechatpay {
+  display: inline-block;
+  width: 118px;
+  height: 50px;
+  background-image: url('../../assets/user/wechatpay.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-bankpay {
+  display: inline-block;
+  width: 118px;
+  height: 50px;
+  background-image: url('../../assets/user/bankpay.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.search-main {
+  background-color: #fff;
+  height: 46px;
+  position: relative;
+  width: 100%;
+  float: left;
+  .svg-container-search {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 19px;
+    height: 100%;
+    margin-left: 12px;
+  }
+  input {
+    height: 100%;
+  }
+  .search-word {
+    width: 100%;
+    padding: 0 125px 0 40px;
+    border: 1px solid $maincolor;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 83px;
+    background-color: $maincolor;
+    border: none;
+    color: #fff;
+    font-size: 18;
+  }
+}
+
+.rome-warp {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.rome {
+  width: 1201px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  .sidebar {
+    float: left;
+    width: 253px;
+    background-color: #fff;
+    ul {
+      background-color: #f5f5f5;
+      li {
+        display: block;
+        background-color: #fff;
+        height: 57px;
+        line-height: 57px;
+        font-size: 16px;
+        color: #333;
+      }
+      .user-menu a {
+        display: block;
+        padding-left: 79px;
+        cursor: pointer;
+        position: relative;
+        &.active:after {
+          position: absolute;
+          content: "";
+          top: 10px;
+          bottom: 10px;
+          left: 0;
+          width: 4px;
+          background-color: #f07026;
+        }
+        &:hover:after {
+          position: absolute;
+          content: "";
+          top: 10px;
+          bottom: 10px;
+          left: 0;
+          width: 4px;
+          background-color: #f07026;
+        }
+      }
+      .user-info {
+        width: 253px;
+        height: 223px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding-top: 19px;
+        h1 {
+          margin: 14px 0 10px;
+          font-size: 18px;
+          color: #333;
+        }
+        .user-tag {
+          font-size: 16px;
+          color: #333;
+        }
+        .score {
+          color: #f07026;
+          margin-right: 5px;
+        }
+        .icon-evaluate {
+          vertical-align: top;
+        }
+        .user-phone {
+          display: block;
+          height: 94px;
+          width: 94px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .rome-main {
+    margin-left: 271px;
+  }
+}
+
+.icon-evaluate {
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #e73802;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.ranking-icon {
+  display: inline-block;
+  width: 28px;
+  height: 25px;
+  background-image: url("../../assets/index/ranking.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-rome {
+  display: inline-block;
+  width: 19px;
+  height: 24px;
+  background-image: url("../../assets/index/rome.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-prefit {
+  display: inline-block;
+  width: 19px;
+  height: 24px;
+  background-image: url("../../assets/index/prefit.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.rome-main {
+  .page-header {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .search-warp {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 10px;
+    .search-containter {
+      overflow: hidden;
+      width: 800px;
+      margin-top: 0;
+    }
+    .scroll-number-warp {
+      float: left;
+      width: 362px;
+      background-color: #fff;
+      height: 54px;
+      line-height: 54px;
+      margin-top: 30px;
+      margin-right: 38px;
+      overflow: hidden;
+      padding-left: 20px;
+      .scroll-number {
+        float: left;
+        height: 54px;
+        line-height: 54px;
+      }
+      .scroll-item {
+        margin-top: 7px;
+        width: 25px;
+        margin-right: 7px;
+        height: 40px;
+        background-color: #f07026;
+        border-radius: 2px;
+        span {
+          background-color: transparent;
+          height: 40px;
+          line-height: 40px;
+          font-size: 32px;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+      .scroll-number-title {
+        float: left;
+        font-size: 16px;
+        color: #333;
+        height: 54px;
+        line-height: 54px;
+        margin-right: 17px;
+      }
+    }
+  }
+}
+
+.resume-main-warp {
+  float: left;
+}
+
+.resume-introduce {
+  float: right;
+}
+
+//----我的任务
+.tasklist {
+  background-color: #fff; //保证高度大于等于侧边菜单
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+  a {
+    display: block;
+    padding: 26px 91px 26px 45px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    .task-tip {
+      font-size: 12px;
+      color: #999;
+      margin-left: 8px;
+    }
+  }
+}
+
+//我的账户
+.rome-amount-warp,
+.withdraw-warp {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 30px 20px 100px;
+  margin-top: 18px;
+  overflow: hidden;
+  &>div {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: left;
+  }
+  .ra-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+    span {
+      vertical-align: middle;
+    }
+    .icon-tip {
+      margin-top: -3px;
+      margin-left: 3px;
+    }
+  }
+  .rome-num-big {
+    font-size: 30px;
+    color: #333;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .rome-num-normal {
+    font-size: 18px;
+    color: #333;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .rome-amount-footer {
+    clear: both;
+    span {
+      margin-right: 40px;
+    }
+  }
+}
+
+.withdraw-warp {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 25px 30px 30px 100px;
+}
+
+//我的账户
+.echarts-warp {
+  background-color: #fff;
+  height: 512px;
+  width: 933px;
+  margin-top: 7px;
+}
+
+//我的分享
+.search-condition {
+  background-color: #fff;
+  margin: 10px 0 30px;
+  padding: 10px 0px;
+  li {
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid #eee;
+    h3 {
+      font-size: 16px;
+      color: #333; // font-weight: normal;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .con-item {
+      display: inline-block;
+      font-size: 16px;
+      color: #666;
+      height: 33px;
+      line-height: 33px;
+      .con-item-title {
+        margin-left: 97px;
+      }
+      span {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        height: 33px;
+        line-height: 33px;
+        padding: 0 10px;
+        border-radius: 2px;
+        margin-right: 14px;
+        &.active {
+          background-color: #f07026;
+          color: #fff;
+        }
+      }
+      input {
+        width: 333px;
+        height: 43px;
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+//个人认证
+.auth-progress {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 24px 27px;
+  .progress-header {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    li {
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      width: 203px;
+      color: #333;
+      background-color: #fff;
+      font-size: 16px;
+      position: relative;
+      z-index: 2;
+      &.active {
+        color: #fff;
+        background-color: #f07026;
+      }
+      &:not(.active) {
+        border-right: 1px solid #ddd;
+      }
+      &:last-of-type {
+        border-right: none;
+      }
+      &:after {
+        // position: absolute;
+        // z-index: 1;
+        // content: "";
+        // top: -1px;
+        // bottom: 0;
+        // left: -1px;
+        // right: 0;
+        // height: 52px;
+        // width: 205px;
+        // background-color: #ddd;
+        // opacity: 1;
+      }
+    }
+  }
+}
+
+.auth-main {
+  background-color: #fff;
+  margin-top: 8px;
+  padding-top: 41px;
+  min-height: 596px;
+  ul {
+    position: relative;
+    li {
+      width: 100%;
+      overflow: hidden;
+      color: #333;
+      font-size: 15px;
+      height: 56px;
+      .auth-label {
+        width: 296px;
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+      }
+      &.auth-title {
+        font-size: 16px;
+        color: #333;
+        margin-left: 66px;
+        font-weight: 600;
+        height: 30px;
+      }
+      .auth-text {
+        min-width: 212px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .input-tip {
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        color: #999;
+        font-size: 14px;
+        margin-left: 9px;
+      }
+      &.imgyzm {
+        .captcha-input {
+          width: 114px;
+        }
+        img {
+          float: right;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 90px;
+        }
+      }
+      .important-tip {
+        display: inline-block;
+        color: #E83902;
+        font-size: 12px;
+        height: 38px;
+        line-height: 38px;
+        margin-left: 9px;
+      }
+    }
+    .idcard-upload {
+      height: 163px;
+      label,
+      img {
+        display: inline-block;
+        width: 212px;
+        height: 163px;
+        line-height: 163px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        color: #999;
+        cursor: pointer;
+      }
+      .delete-card {
+        vertical-align: top;
+        font-size: 14px;
+        color: #e83902;
+        cursor: pointer;
+      }
+    }
+    .choose-paytype {
+      height: 80px;
+    }
+    .pay-item {
+      width: 122px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      float: left;
+      margin-right: 6px;
+      .paytype {
+        border: 1px solid #ddd;
+        margin-bottom: 8px;
+        cursor: pointer;
+        position: relative;
+        &.active {
+          border: 1px solid #f07026;
+          &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 11px;
+            height: 11px;
+            background-image: url(../../assets/user/select.png);
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .default-userinfo {
+      position: absolute;
+      top: 30px;
+      right: 280px;
+      text-align: right;
+      width: 94px;
+      height: 95px;
+      z-index: 1;
+      p {
+        position: relative;
+        img {
+          width: 94px;
+          height: 70px;
+          display: block;
+          line-height: 70px;
+        }
+        .useit {
+          bottom: -25px;
+          background-color: #fff;
+          color: #f07026;
+        }
+        span {
+          position: absolute;
+          text-align: center;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          text-align: center;
+          padding: 3px;
+          width: 94px;
+          display: block;
+          z-index: 2;
+          background-color: #333;
+          opacity: 0.8;
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .progress-result {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 202px;
+  }
+  .progress-result-tip {
+    font-size: 14px;
+    color: #f07026;
+    text-align: center;
+    margin-top: 21px;
+  }
+  .auth-submit {
+    text-align: center;
+    .el-button--primary {
+      color: #fff;
+      background-color: #f07026;
+      border-color: #f07026;
+      height: 44px;
+      width: 122px;
+      border-radius: 0;
+    }
+  }
+  .password-submit {
+    margin-top: 47px;
+  }
+}
+
+.auth-main0 {
+  .auth-submit {
+    .el-button--primary {
+      margin-left: -120px;
+    }
+  }
+}
+
+.auth-main2,
+.auth-main1 {
+  .auth-submit {
+    margin-top: 50px;
+  }
+} //提现
+.withdraw-header {
+  background-color: #fff;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 8px;
+  padding: 20px 0 0 40px;
+  p {
+    font-size: 16px;
+    color: #333;
+    margin-right: 60px;
+  }
+  span {
+    color: #f07026;
+  }
+}
+
+.withdraw-footer {
+  margin-top: 9px;
+  padding: 20px 40px;
+  background-color: #fff;
+  h4 {
+    font-size: 12px;
+    color: #333;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.withdraw0 {
+  min-height: 516px;
+}
+
+.withdraw1 {
+  min-height: 503px;
+  .el-form-item::before,
+  .el-form-item::after,
+  .el-form-item__content::after,
+  .el-form-item__content::before {
+    display: none;
+  }
+}

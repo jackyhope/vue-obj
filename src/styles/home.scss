@@ -1,0 +1,824 @@
+@import './index.scss';
+.icon-rome {
+  display: inline-block;
+  width: 19px;
+  height: 24px;
+  background-image: url("../../assets/index/rome.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-r {
+  display: inline-block;
+  width: 22px;
+  height: 33px;
+  background-image: url("../../assets/index/r.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
+.icon-tip {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../assets/index/tip.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-prefit {
+  display: inline-block;
+  width: 19px;
+  height: 24px;
+  background-image: url("../../assets/index/prefit.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+//----统计----begin
+.statistic {
+  width: 495px;
+  overflow: hidden;
+  padding: 53px 20px 42px;
+  display: block;
+  float: left;
+  &>div {
+    float: left;
+    width: 50%;
+    text-align: center;
+    span {
+      color: #f07026;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    p {
+      color: #333;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+
+//----统计----end
+//----登录框
+.login-border {
+  position: relative;
+  border: 1px solid #f07026;
+  display: inline-block;
+  width: 411px;
+  height: 422px;
+}
+
+.login-container {
+  display: inline-block;
+  width: 409px;
+  height: 420px;
+  background-color: #f5f5f5;
+  padding: 20px 25px 75px;
+  header {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+    &:after {
+      content: " ";
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #bfbfbf;
+    }
+    p {
+      text-align: center;
+      width: 50%;
+      float: left;
+      padding: 5px 0 13px;
+      margin: 0;
+      color: #333;
+      font-size: 20px;
+      &.active {
+        color: #f07026;
+      }
+    }
+    .tab-nav {
+      position: absolute;
+      width: 181px;
+      transform: translateX(0);
+      background-color: #f07026;
+      z-index: 3;
+      bottom: 0;
+      content: " "; // transition: transform 0.2s;
+      height: 3px;
+      left: 0;
+    }
+    .tab-nav-pwd {
+      transform: translateX(100%);
+    }
+  }
+  .login-form {
+    padding: 38px 13px 10px;
+    .sms-send-tip {
+      font-size: 16px;
+      color: #333;
+    }
+    .smd-phone {
+      font-size: 32px;
+      color: #f07026;
+      overflow: hidden;
+      margin: 14px 0 32px;
+      span {
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        padding-top: 8px;
+      }
+      img {
+        display: inline-block;
+        width: 14px;
+        height: 15px;
+        margin-right: 9px;
+        vertical-align: middle;
+      }
+    }
+    .smscode-warp {
+      span {
+        display: inline-block;
+        width: 153px;
+        height: 52px;
+        line-height: 52px;
+        border: none;
+        background-color: #f07026;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        &.sms-disabled {
+          border: 2px solid #eee;
+          background-color: #f5f5f5;
+          color: #999;
+        }
+      }
+    }
+    .el-input__inner {
+      width: 100%;
+      height: 52px;
+      font-size: 16px;
+    }
+    .captcha-input {
+      width: 177px;
+      .el-input__inner {
+        width: 177px;
+      }
+    }
+    .captcha {
+      float: right;
+      height: 50px;
+      width: 120px;
+    }
+    .el-form-item {
+      margin-bottom: 30px;
+    }
+    .el-button--primary {
+      height: 52px;
+      background-color: #F07026;
+      border-color: #F07026;
+      font-size: 18px;
+    }
+  }
+  .register-form {
+    padding-top: 18px;
+    .has-account {
+      margin-top: 2px;
+    }
+  }
+  .tip {
+    float: right;
+    font-size: 16px;
+    color: #333;
+    margin-top: 18px;
+    span {
+      cursor: pointer;
+      color: #f07026;
+    }
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #606266 !important;
+  }
+  .remember-warp {
+    cursor: pointer;
+    margin-top: 8px;
+    .checkbox {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #e4e4e4;
+      background-color: #fff;
+      vertical-align: middle;
+    }
+    .ivcheckbox {
+      background-color: #fff;
+      background: url(../../assets/index/yesg.png) no-repeat;
+      background-size: 11px 9px;
+      background-position: 2px 3px;
+    }
+    .ivyd {
+      margin-left: 0.3rem;
+      vertical-align: middle;
+      font-size: 14px;
+      color: #999;
+    }
+    .forget {
+      font-size: 14px;
+      color: #f07026;
+      vertical-align: middle;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner {
+      background-color: #fff;
+      border-color: #e5e5e5;
+    }
+    .el-checkbox__inner::after {
+      // border: 1px solid #F07026;
+    }
+  }
+}
+
+//----已登录----
+.loged-warp {
+  display: inline-block;
+  width: 409px;
+  height: 420px;
+  cursor: pointer;
+  .index-mytask {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid transparent;
+    &.active {
+      border: 1px solid #ddd;
+      background-color: #f5f5f5;
+    }
+    .mytask-num {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+      text-align: center;
+      background-color: #F07026;
+      color: #fff;
+      border-radius: 50%;
+    }
+  }
+  .user-main {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0 25px;
+    .user-phone {
+      width: 113px;
+      height: 113px;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin: 14px 0 10px;
+    }
+    .score {
+      color: #f07026;
+      margin-right: 5px;
+    }
+    .user-account {
+      overflow: hidden;
+      margin-top: 30px;
+      &>div {
+        width: 50%;
+        box-sizing: border-box;
+      }
+      .uc-title {
+        font-size: 18px;
+        color: #333;
+        font-weight: normal;
+        height: 24px;
+        line-height: 24px;
+        span {
+          display: inline-block; // padding-top: 3px;
+          vertical-align: middle;
+        }
+      }
+      .uc-tip {
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+        margin-top: 4px;
+      }
+      .uc-rome {
+        font-size: 30px;
+        color: #333;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.withdraw {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  padding-top: 3px;
+  span {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+  }
+  span.wd-money {
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 44px 0 8px;
+  }
+  span.wd-btn {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    width: 62px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #F07026;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: -5px;
+  }
+}
+
+//----首页搜索框---begin
+.search-containter {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 704px;
+  margin-top: 27px;
+  .search-type {
+    overflow: hidden;
+    text-align: left;
+    p {
+      display: block;
+      float: left;
+      height: 30px;
+      width: 51px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      cursor: pointer;
+      &.active {
+        color: #fff;
+        background-color: #f07026;
+      }
+    }
+  }
+  .search-main {
+    height: 54px;
+    position: relative;
+    width: 100%;
+    .svg-container-search {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 19px;
+      height: 100%;
+      margin-left: 12px;
+    }
+    input {
+      height: 100%;
+    }
+    .search-word {
+      width: 100%;
+      padding: 0 125px 0 40px;
+      border: 1px solid $maincolor;
+      font-size: 18px;
+      line-height: 100%;
+    }
+    .search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 122px;
+      background-color: $maincolor;
+      border: none;
+      color: #fff;
+      font-size: 18;
+    }
+  }
+  .hot-search {
+    font-size: 14px;
+    margin-top: 7px;
+    line-height: 1.5;
+    color: #999;
+    span {
+      margin-right: 8px;
+    }
+  }
+}
+
+//----首页搜索框---end
+//----简历列表----begin
+.resume-list-warp {
+  width: 100%;
+  background-color: #f5f5f5;
+  .resume-list-header {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 23px 0 16px;
+    a {
+      color: #333;
+      font-size: 16px;
+      display: block;
+      padding-top: 4px;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 20px;
+      color: $maincolor;
+    }
+  }
+  .resume-list {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden; // background-color: rgb(128, 76, 76);
+    .el-carousel__container {
+      width: 1201px;
+      overflow: hidden;
+      height: 707px !important;
+    }
+    .el-carousel__indicators {
+      background-color: #C4C4C4;
+      border-radius: 10px;
+      height: 22px;
+      line-height: 22px;
+      padding: 0 30px;
+      margin-bottom: 10px;
+    }
+    .el-carousel__indicator {
+      padding: 4px 4px;
+    }
+    .el-carousel__button {
+      opacity: 1;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .el-carousel__indicator.is-active button {
+      background-color: #f07026;
+    }
+  }
+}
+
+.resume-item {
+  background-color: #fff;
+  border-radius: 6px;
+  float: left;
+  overflow: hidden;
+  width: 388px;
+  margin-right: 18px;
+  margin-bottom: 18px; // padding: 20px 18px 28px;
+  position: relative;
+  cursor: pointer;
+  .visit-model {
+    display: none;
+    color: #fff;
+    padding: 15px 20px;
+    h1 {
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+    .visit-tip {
+      font-size: 14px;
+      color: #F07026;
+      text-align: center;
+      span {
+        color: #fff;
+        margin-left: -3px;
+      }
+    }
+    .lately {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 16px;
+      line-height: 1.3;
+    }
+  }
+  &:hover {
+    .visit-model {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      filter: Alpha(opacity=88);
+      -moz-opacity: 0.88;
+      opacity: 0.88;
+      min-height: 142px;
+      z-index: 10;
+    }
+  }
+  &:nth-of-type(3n) {
+    float: right;
+    margin-right: 0px;
+  }
+  .visit-date {
+    position: absolute;
+    top: 11px;
+    right: 9px;
+    font-size: 12px;
+    color: #999;
+  }
+  .resume-main-warp {
+    margin-bottom: 20px;
+    .resume-main {
+      overflow: hidden;
+      padding: 24px 18px 0px;
+      .phone {
+        height: 103px;
+        width: 103px;
+      }
+      .resume-info {
+        margin-left: 115px;
+        margin-top: 22px;
+        &>div {
+          margin-top: 9px;
+        }
+        .info-base {
+          span {
+            font-size: 12px;
+            color: #999;
+          }
+        }
+      }
+      h3 {
+        color: #333;
+        font-size: 16px;
+        display: inline;
+        margin-right: 5px;
+      }
+    }
+    span {
+      line-height: 100%;
+      font-size: 14px;
+    }
+    .education {
+      padding: 0 18px;
+      margin-top: 1px;
+      div {
+        margin-top: 7px;
+        width: 100%; // height: 50px;
+        z-index: 1;
+        font-size: 14px;
+        color: #333;
+        display: block; // &>span {
+        //   // line-height: 1.2;
+        //   display: inline-block;
+        //   margin-top: 3px;
+        // }
+        // p {
+        //   display: inline-block; // margin-left: 79px;
+        //   line-height: 1.2;
+        // }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .br3 {
+    padding-right: 8px;
+    border-right: 1px solid #333;
+  }
+  .br9 {
+    padding-right: 5px;
+    border-right: 1px solid #999;
+  }
+  .resume-introduce {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    padding: 16px 20px 0;
+    margin-bottom: 28px;
+    height: 103px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    h3 {
+      font-size: 15px;
+      color: #333;
+      display: inline;
+    }
+    &:after {
+      position: absolute;
+      content: ' ';
+      z-index: 9;
+      top: 0px;
+      left: 0;
+      right: 0;
+      width: 388px;
+      height: 1px;
+      background-color: #eeeeee;
+    }
+  }
+  .resume-item-footer {
+    float: left;
+    height: 50px;
+    width: 100px;
+    width: 100%;
+    line-height: 50px;
+    padding-left: 18px;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    a {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+//----简历列表----end
+//----排行版----begin
+.ranking-list {
+  width: 100%;
+  background-color: #ffffff;
+  .ranking-warp {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 1201px;
+  }
+  .ranking-item {
+    width: 50%;
+    box-sizing: border-box;
+    &.fl {
+      padding-right: 51px;
+    }
+    &.fr {
+      padding-left: 51px;
+    }
+    .ranking-header {
+      overflow: hidden;
+      padding: 19px 0;
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $maincolor;
+      }
+      span {
+        padding-top: 6px;
+        color: #666;
+        font-size: 14px;
+      }
+    }
+    &.fl i {
+      color: #e83902;
+      font-size: 16px;
+    }
+  }
+  .brpos {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      right: -51px;
+      top: -14px;
+      bottom: 0;
+      height: 220px;
+      width: 1px;
+      background-color: #eee;
+    }
+  }
+  .ranking-item-warp {
+    margin-bottom: 7px;
+  }
+  .ranking-man {
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin: 0 17px 0 15px;
+  }
+  .ranking-icon {
+    margin-right: 7px;
+  }
+  .total-profit {
+    float: right;
+    font-size: 14px;
+    color: #333;
+    i {
+      font-style: normal;
+    }
+  }
+}
+
+.icon-num-ranking {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 29px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #e83902;
+  text-align: center;
+}
+
+.icon-num-ranking-bg2 {
+  background-color: $maincolor;
+}
+
+.icon-evaluate {
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #e73802;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.ranking-icon {
+  display: inline-block;
+  width: 28px;
+  height: 25px;
+  background-image: url('../../assets/index/ranking.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+//----排行榜----end
+//----底部菜单----begin
+.footer-menu {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 50px 0 15px;
+  text-align: center;
+  overflow: hidden;
+  .footer-menu-item {
+    display: inline-block;
+    margin-right: 176px;
+    width: 224px;
+    height: 224px;
+    background-color: #fff;
+    border: 2px solid #FC964F;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: #FBA366;
+      border: 2px solid #FF6C06;
+      h1 {
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
+    h1 {
+      transition: color 0.5s;
+      color: #FF6C06;
+      font-size: 42px;
+      font-weight: normal;
+      margin: 74px 0px 21px;
+    }
+    p {
+      transition: color 0.5s;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+  .footer-menu-item:last-child {
+    margin-right: 0px;
+  }
+}
+
+//----底部菜单----end
